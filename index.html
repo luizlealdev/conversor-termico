@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor Térmico</title>
+</head>
+<body>
+    <div class="body-container">
+         <div class="cabecalho-text">
+            <p class="title">Conversor de Temperatura</p>
+         </div>
+         <div class="select-temperature">
+             <select id="temp-pri">
+                 <option value="celsius" selected>Celsius</option>
+                 <option value="fahrenheit">Fahrenheit</option>
+                 <option value="kelvin">Kelvin</option>
+             </select>
+             <span class="text-complete">Para</span>
+             <select id="temp-seg">
+                 <option value="celsius">Celsius</option>
+                 <option value="fahrenheit" selected>Fahrenheit</option>
+                 <option value="kelvin">Kelvin</option>
+             </select>
+         </div>
+         <div class="input-container">
+             <input type="text" name="input-value" value="0" class="input-value" placeholder="Valor a ser convertido"><br>
+             <p class="result">0°C é igual a 32.00°F</p>
+         </div>
+         <div class="button-container">
+             <button type="submit" class="btn" onclick="convert()">Converter</button>
+         </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
